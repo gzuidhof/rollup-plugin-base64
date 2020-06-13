@@ -1,0 +1,36 @@
+{
+  "name": "rollup-plugin-base64",
+  "version": "1.0.0",
+  "description": "Converts files to base64",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@rollup/pluginutils": "^3.1.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "rollup": "^2.16.0"
+  },
+  "scripts": {
+    "test": "jest test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzuidhof/rollup-plugin-base64.git"
+  },
+  "keywords": [
+    "rollup-plugin",
+    "base64",
+    "string",
+    "wasm",
+    "webassembly"
+  ],
+  "author": "Guido Zuidhof <me@guido.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gzuidhof/rollup-plugin-base64/issues"
+  },
+  "homepage": "https://github.com/gzuidhof/rollup-plugin-base64"
+}
