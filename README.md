@@ -1,8 +1,17 @@
 # rollup-plugin-base64
 
+[![NPM](https://img.shields.io/npm/v/rollup-plugin-base64)](https://www.npmjs.com/package/rollup-plugin-base64)
+[![Node.js CI](https://github.com/gzuidhof/rollup-plugin-base64/workflows/Node.js%20CI/badge.svg)](https://github.com/gzuidhof/rollup-plugin-base64/actions)
+
+
 A [**Rollup**](https://rollupjs.org/) plugin to load any file as a base64 string. This is especially useful for embedding WebAssembly programs into your code so no additional `.wasm` file needs to be loaded.
 
 Note that with base64 encoding the size of the input file will be increased by around 33%.
+
+## Installation
+```shell
+npm install rollup-plugin-base64 --save-dev
+```
 
 ## Usage
 
