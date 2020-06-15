@@ -1,4 +1,5 @@
 const { createFilter } = require("@rollup/pluginutils");
+const {readFileSync} = require("fs");
 
 function base64(opts = {}) {
   if (!opts.include) {
@@ -8,10 +9,10 @@ function base64(opts = {}) {
   const filter = createFilter(opts.include, opts.exclude);
   return {
     name: "base64",
-
     transform(data, id) {
       if (filter(id)) {
-          return  `export default "${Buffer.from(data).toString('base64')}";`
+        const fileData = readFileSync(id);
+          return  `export default "${fileData.toString('base64')}";`
       }
     }
   };

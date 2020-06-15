@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-base64",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Converts files to base64",
   "main": "index.js",
   "files": [
